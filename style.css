@@ -23,6 +23,24 @@
     padding: 28px;
   }
   
+  .notFound{
+    display: none;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .notFound img{
+    width: 60%;
+  }
+
+  .notFound h1{
+    font-size: 27px;
+    color: rgb(250, 6, 6);
+    font-weight: 900;
+    margin-block-end: 15px;
+  }
   .searchbox{
     height: min-content;
     width:100%; 
@@ -60,7 +78,7 @@
   }
   
   .weatherBody{
-    display:flex;
+    display:none;
     justify-content:center;
     align-items:center;
     flex-direction:column;
