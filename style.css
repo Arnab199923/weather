@@ -122,6 +122,16 @@
     font-size:17px;
     font-weight: 600;
     margin-left: 10px;
+    animation: animate 2s infinite;
+  }
+
+  @keyframes animate{
+    0%{
+      color:black;
+    }
+    100%{
+      color:red;
+    }
   }
   
   .text span,p{
