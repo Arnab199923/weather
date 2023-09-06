@@ -98,19 +98,23 @@
     margin-top:20px;
   }
   
-  .humidity, .wind{
+  .humidity, .wind, .feels{
     display:flex;
     align-items:center;
+    justify-content: space-between;
   }
-  .humidity i,.wind i{
+  .humidity i,.wind i, .feels i{
     font-size:30px;
   }
   
   .humidity{
-    margin-left: 20px;
+    margin-left: 1px;
   }
   .wind{
-    margin-right: 20px;
+    margin-left: 25px;
+  }
+  .feels{
+    margin-left: 30px;
   }
   
   .weatherDetails .text{

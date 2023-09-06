@@ -5,6 +5,7 @@ const temparature = document.querySelector('.temp');
 const weatherDes = document.querySelector('.description');
 const humid = document.getElementById('humid');
 const wind = document.getElementById('windSpeed');
+const feels = document.getElementById('feel');
 // const backgroundColor = document.querySelector('container');
 
 
@@ -25,6 +26,7 @@ temparature.innerHTML = Math.round(data.main.temp - 273.15)+"\u00b0c";
    weatherDes.innerHTML = data.weather[0].main;
     wind.innerHTML = data.wind.speed+'\u2190';
     humid.innerHTML = data.main.humidity+'\&#37';
+    feels.innerHTML =Math.round(data.main.feels_like-273.15)+"\u00b0c"
 
     switch (data.weather[0].main) {
         case 'Clouds':
