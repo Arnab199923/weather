@@ -17,7 +17,7 @@
   .container{
     width: 400px;
     height: min-content;
-    background: #fff;
+    /* background: linear-gradient(to left, #f00, #fff 40%, #0fff 100%); */
     border-radius:12px;
     padding: 28px;
   }
@@ -120,6 +120,6 @@
   }
   
   .text span,p{
-    font-style: italic;
-    
+    font-style: italic; 
+
   }

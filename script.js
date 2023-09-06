@@ -5,6 +5,7 @@ const temparature = document.querySelector('.temp');
 const weatherDes = document.querySelector('.description');
 const humid = document.getElementById('humid');
 const wind = document.getElementById('windSpeed');
+// const backgroundColor = document.querySelector('container');
 
 
 
@@ -28,18 +29,28 @@ temparature.innerHTML = Math.round(data.main.temp - 273.15)+"\u00b0c";
     switch (data.weather[0].main) {
         case 'Clouds':
             weatherImage.src = "/image/clouds.png";
+            document.querySelector('.container').style.backgroundColor = "#808080";
             break;
             case 'Haze':
                 weatherImage.src= "/image/haze.png";
+                document.querySelector('.container').style.backgroundColor = "#D3D3D3";
                 break;
                 case 'Clear':
-                weatherImage.src= "/image/sunny.png";
-                break;
-                case 'Rain':
-                    weatherImage.src= "/image/rain.jpg";
+                    weatherImage.src= "/image/sunny.png";
+                    document.querySelector('.container').style.backgroundColor = "#5fff";
                     break;
-                    case 'Snow':
-                        weatherImage.src= "/image/snow.jpg";
+                    case 'Rain':
+                        weatherImage.src= "/image/rain.png";
+                        document.querySelector('.container').style.backgroundColor = " #000999";
+                        // document.querySelector('.container').style.oundColor = " #fff";
+                        break;
+                        case 'Snow':
+                            weatherImage.src= "/image/snow.jpg";
+                            document.querySelector('.container').style.backgroundColor = "#fff";
+                            break;
+                            case 'Mist':
+                                weatherImage.src= "/image/mist.png";
+                                document.querySelector('.container').style.backgroundColor = "lime";
 
 
 
