@@ -18,7 +18,7 @@
   .container{
     width: 400px;
     height: min-content;
-    /* background: linear-gradient(to left, #f00, #fff 40%, #0fff 100%); */
+    background: rgb(49, 0, 51);
     border-radius:12px;
     padding: 28px;
   }
